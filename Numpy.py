@@ -128,3 +128,46 @@ plt.xlabel("Students")
 plt.ylabel("Marks")
 plt.show()
 
+import matplotlib.pyplot as plt
+import pylab as pl
+
+labels = ['Python', 'Java', 'C++', 'JavaScript']
+sizes  = [40, 25, 20, 15]
+plt.pie(sizes,labels=labels,autopct='%1.1f%%',startangle=140,)
+plt.title("Programming Language Usage")
+plt.axis('equal')
+plt.show()
+
+
+import matplotlib.pyplot as plt
+
+ages = [18,22,21,25,30,30,27,25,22,19]
+
+# Provide bins (number or list), not the title
+plt.hist(ages, bins=5, edgecolor='pink')  # try bins=5 or choose a method like bins='auto'
+
+plt.xlabel("Age")
+plt.ylabel("Frequency")
+plt.title("Distribution of Ages")  # Use title() instead
+plt.show()
+
+
+
+
+import matplotlib.pyplot as plt
+ages=[18,22,21,25,30,30,27,25,22,19]
+plt.hist(ages,bins=5)
+plt.xlabel("Age")
+plt.ylabel("Frequency")
+plt.show()
+
+
+x=[1,2,3,4,5]
+y=[5,7,8,10]
+
+import matplotlib.pyplot as plt
+plt.scatter(x,y,color='red')
+plt.title("Scatter plot Example")
+pl.xlabel("X Values")
+plt.ylabel("Y Values")
+plt.show()
