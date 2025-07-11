@@ -161,11 +161,10 @@ plt.xlabel("Age")
 plt.ylabel("Frequency")
 plt.show()
 
-
-x=[1,2,3,4,5]
-y=[5,7,8,10]
-
 import matplotlib.pyplot as plt
+x = [1, 2, 3, 4]
+y = [5, 7, 8, 10]
+
 plt.scatter(x,y,color='red')
 plt.title("Scatter plot Example")
 pl.xlabel("X Values")
